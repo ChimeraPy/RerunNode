@@ -25,7 +25,7 @@ To Do
 Contributions are welcomed! Our [Developer Documentation](https://chimerapy.readthedocs.io/en/latest/developer/index.html) should provide more details in how ChimeraPy works and what is in current development.
 
 ## License
-[ChimeraPy](https://github.com/ChimeraPy) and [ChimeraPy/Orchestrator](https://github.com/ChimeraPy/Orchestrator) uses the GNU GENERAL PUBLIC LICENSE, as found in [LICENSE](./LICENSE) file. Rerun is released under the dual license of MIT and Apache 2.0, as found in [LICENSE-MIT](https://github.com/rerun-io/rerun/blob/main/LICENSE-MIT) and [LICENSE-APACHE](.https://github.com/rerun-io/rerun/blob/main/LICENSE-APACHE) file.
+[ChimeraPy](https://github.com/ChimeraPy) and [ChimeraPy/Orchestrator](https://github.com/ChimeraPy/Orchestrator) uses the GNU GENERAL PUBLIC LICENSE, as found in [LICENSE](./LICENSE) file. Rerun is released under the dual license of MIT and Apache 2.0, as found in [LICENSE-MIT](https://github.com/rerun-io/rerun/blob/main/LICENSE-MIT) and [LICENSE-APACHE](https://github.com/rerun-io/rerun/blob/main/LICENSE-APACHE) file.
 
 ## Funding Info
 This project is supported by the [National Science Foundation](https://www.nsf.gov/) under AI Institute  Grant No. [DRL-2112635](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2112635&HistoricalAwards=false).
