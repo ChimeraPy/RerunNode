@@ -2,7 +2,7 @@
   <a href="https://github.com/ChimeraPy/Orchestrator"><img src="./docs/images/banner.png" alt="ChimeraPy/RerunNode"></a>
 </p>
 <p align="center">
-    <em>proof of concept implementation of a [rerun](https://rerun.io) viewer to log data with a ChimeraPy node</em>
+    <em>proof of concept implementation of a <a href="https://rerun.io" target="_blank">rerun</a> viewer to log data with a ChimeraPy node</em>
 </p>
 <p align="center">
 </p>
