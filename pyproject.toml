@@ -38,6 +38,11 @@ test = [
     'bump2version'
 ]
 
+examples = [
+    "transformers",
+    "timm"
+]
+
 [project.urls]
 homepath = "https://github.com/chimerapy/Orchestrator"
 documentation = "https://github.com/chimerapy/Orchestrator"

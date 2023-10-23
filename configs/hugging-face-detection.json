@@ -1,0 +1,53 @@
+{
+  "mode": "record",
+  "workers": {
+    "manager_ip": "129.59.104.153",
+    "manager_port": 9001,
+    "instances": [
+      {
+        "name": "local",
+        "id": "local",
+        "description": "local worker for the MMLA pipeline demo with a screen capture node"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "registry_name": "CPPipelines_Video",
+      "name": "video-1",
+      "kwargs": {
+        "video_src": "mfsort-data/PETS09-S2L1.mp4",
+        "width": 640,
+        "height": null,
+        "frame_rate": 30,
+        "frame_key": "image",
+        "loop": true
+      },
+      "package": "chimerapy-pipelines"
+    },
+    {
+      "registry_name": "ChimeraPyRerunNode_ExampleDetector",
+      "name": "rerun-detect",
+      "kwargs": {
+        "coco_categories_loc": "configs/panoptic_coco_categories.json"
+      },
+      "package": "chimerapy-rerun-node"
+    }
+  ],
+  "adj": [
+    [
+      "video-1",
+      "rerun-detect"
+    ]
+  ],
+  "manager_config": {
+    "logdir": "cp-logs",
+    "port": 9001
+  },
+  "mappings": {
+    "local": [
+        "video-1",
+        "rerun-detect"
+    ]
+  }
+}

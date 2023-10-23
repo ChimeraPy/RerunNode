@@ -8,38 +8,16 @@
         "name": "local",
         "id": "local",
         "description": "local worker for the MMLA pipeline demo with a screen capture node"
-      },
-      {
-        "name": "windows",
-        "id": "windows",
-        "remote": true,
-        "description": "Windows Worker"
-      },
-      {
-        "name": "mac",
-        "id": "mac",
-        "remote": true,
-        "description": "Mac Worker"
       }
     ]
   },
   "nodes": [
     {
       "registry_name": "CPPipelines_ScreenCapture",
-      "name": "screen-capture-mac",
+      "name": "screen-capture",
       "kwargs": {
         "scale": 0.25,
-        "save_name": "screen-capture-mac",
-        "save_timestamp": true
-      },
-      "package": "chimerapy-pipelines"
-    },
-    {
-      "registry_name": "CPPipelines_ScreenCapture",
-      "name": "screen-capture-windows",
-      "kwargs": {
-        "scale": 0.5,
-        "save_name": "screen-capture-windows",
+        "save_name": "screen-capture",
         "save_timestamp": true
       },
       "package": "chimerapy-pipelines"
@@ -62,11 +40,7 @@
   ],
   "adj": [
     [
-      "screen-capture-mac",
-      "rerun-show"
-    ],
-    [
-      "screen-capture-windows",
+      "screen-capture",
       "rerun-show"
     ]
   ],
@@ -75,13 +49,8 @@
     "port": 9001
   },
   "mappings": {
-    "mac": [
-      "screen-capture-mac"
-    ],
-    "windows": [
-      "screen-capture-windows"
-    ],
     "local": [
+      "screen-capture",
       "rerun-show"
     ]
   }
