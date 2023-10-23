@@ -116,7 +116,7 @@ class Detector(Node):
         background_boxes = boxes[~things_np, :]
         background_class_ids = class_ids[~things_np]
         rr.log(
-            f"{name}/image_scaled/detections/background",
+            f"{name}_image_scaled/detections/background",
             rr.Boxes2D(
                 array=background_boxes,
                 array_format=rr.Box2DFormat.XYXY,
